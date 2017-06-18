@@ -1,0 +1,20 @@
+
+nav {
+  height: 100px;
+  background-color: lightblue;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 20px;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.link {
+  font-size: 1.5em;
+  color: white;
+}
+
+
+
