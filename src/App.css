@@ -2,6 +2,7 @@
 nav {
   height: 100px;
   background-color: lightblue;
+  box-shadow: 0 2px 2px 2px rgba(211, 211, 211, 0.8);
 }
 
 nav li {
@@ -9,6 +10,10 @@ nav li {
   padding-right: 20px;
   line-height: 100px;
   vertical-align: middle;
+}
+
+.nav-ul {
+  padding-left: 20px;
 }
 
 .link {
@@ -59,11 +64,11 @@ nav li {
 /*-------------CART------------------*/
 
 .cart {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .cart-item {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -71,12 +76,34 @@ nav li {
   margin-left: 10px;
 }
 
+.btn {
+  padding: 3px 6px;
+}
+
 
 
 /*-------------CART------------------*/
+@media (min-width: 600px) {
+  .nav-ul {
+    padding-left: 40px;
+  }
 
-.text {
-  columns: 2;
+  .cart {
+    margin-left: 40px;
+  }
+  
+  .cart-item {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+  }
+
+  .text {
+    columns: 2;
+  }
 }
 
 
