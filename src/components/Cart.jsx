@@ -1,19 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Shelf from './Shelf';
 import Navbar from '../components/Navbar';
 
 const Cart = (props) =>  {
  
+//  console.log(props.cart)
   const cartItems = props.cart.map((item, i) => {
-    return <li key={i}>{item}</li>
+    // console.log(item.title)
+    return (
+      <li key={i}><b>{item.title}</b> {item.price}
+        <button>Remove</button>
+      </li>
+    )
   });
 
   return (
     <div>
       <Navbar />
-      <h1>Cart</h1>
-      <Shelf />
       <h1>Cart Items</h1>
       <ol>
         {cartItems}
