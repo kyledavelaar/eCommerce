@@ -3,8 +3,8 @@ import Navbar from './Navbar';
 
 const About = () => (
   <div>
-    <h1>About</h1>
     <Navbar />
+    <h1>About</h1>
   </div>
 )
 

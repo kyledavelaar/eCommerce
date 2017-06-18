@@ -3,8 +3,8 @@ import Navbar from './Navbar';
 
 const NotFound = () => (
   <div>
-    <h1>NotFound</h1>
     <Navbar />
+    <h1>NotFound</h1>
   </div>
 )
 

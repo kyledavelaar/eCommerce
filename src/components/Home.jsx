@@ -3,8 +3,8 @@ import Navbar from './Navbar';
 
 const Home = () => (
   <div>
-    <h1>Home</h1>
     <Navbar />
+    <h1>Home</h1>
   </div>
 )
 

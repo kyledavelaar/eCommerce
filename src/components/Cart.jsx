@@ -11,8 +11,8 @@ const Cart = (props) =>  {
 
   return (
     <div>
-      <h1>Cart</h1>
       <Navbar />
+      <h1>Cart</h1>
       <Shelf />
       <h1>Cart Items</h1>
       <ol>
