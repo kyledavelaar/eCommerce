@@ -7,9 +7,7 @@ import { connect } from 'react-redux';
 
 const Cart = (props) =>  {
  
-//  console.log(props.cart)
   const cartItems = props.cart.map((item, i) => {
-    // console.log(item.title)
     return (
       <li key={i}><b>{item.title}</b> {item.price}
         <button onClick={props.cartActions.removeFromCart.bind(this, item)}>Remove</button>
