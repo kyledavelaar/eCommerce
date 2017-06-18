@@ -1,4 +1,4 @@
-
+/*-------------NAVBAR----------------*/
 nav {
   height: 100px;
   background-color: lightblue;
@@ -16,5 +16,24 @@ nav li {
   color: white;
 }
 
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+
+/*-------------HOMEPAGE------------------*/
+
+.list {
+  padding: 0;
+}
+
+.list-item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.list-item img {
+  margin: 0 auto;
+}
 
