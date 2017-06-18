@@ -1,6 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Navbar from '../components/Navbar';
+import * as CartActions from '../actions/cartAction';
+import * as ShelfActions from '../actions/shelfAction';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 const Cart = (props) =>  {
  
@@ -9,7 +12,7 @@ const Cart = (props) =>  {
     // console.log(item.title)
     return (
       <li key={i}><b>{item.title}</b> {item.price}
-        <button>Remove</button>
+        <button onClick={props.cartActions.removeFromCart.bind(this, item)}>Remove</button>
       </li>
     )
   });
@@ -32,4 +35,12 @@ function mapStateToProps(state, prop) {
   }
 }
 
-export default connect(mapStateToProps, null)(Cart);
+function mapDispatchToProps(dispatch) {
+  return {
+    cartActions: bindActionCreators(CartActions, dispatch),
+    shelfActions: bindActionCreators(ShelfActions, dispatch)
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

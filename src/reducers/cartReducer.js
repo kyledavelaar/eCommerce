@@ -4,7 +4,9 @@ export default (state = [], payload) => {
     case 'add':
       return [...state, payload.item];
     case 'remove':
-      return []
+      console.log('STATE', state);
+      console.log('PAYLOAD', payload);
+      return state.filter(n => n.id !== payload.item.id)
     default:
       return state;
   }
