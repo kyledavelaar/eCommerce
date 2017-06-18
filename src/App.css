@@ -49,3 +49,22 @@ nav li {
   cursor: pointer;
 }
 
+/*-------------CART------------------*/
+
+.cart {
+  margin-left: 40px;
+}
+
+.cart-item {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  margin-left: 10px;
+}
+
+
+
+
+

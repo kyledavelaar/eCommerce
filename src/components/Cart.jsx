@@ -5,23 +5,37 @@ import * as ShelfActions from '../actions/shelfAction';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-const Cart = (props) =>  {
- 
+const Cart = (props) => {
+
+  let totalPrice = 0;
+  
+  console.log('STATE', props.cart);
+  
   const cartItems = props.cart.map((item, i) => {
+    totalPrice += Number(item.price)
     return (
-      <li key={i}><b>{item.title}</b> {item.price}
-        <button onClick={props.cartActions.removeFromCart.bind(this, item)}>Remove</button>
+      <li className="cart-item" key={i}><b>{item.title}</b>  ${item.price}
+        <button
+          className="btn btn-danger"
+          onClick={props.cartActions.removeFromCart.bind(this, item)}>
+          Remove</button>
       </li>
     )
   });
 
+
   return (
     <div>
       <Navbar />
-      <h1>Cart Items</h1>
-      <ol>
-        {cartItems}
-      </ol>
+      <div className="cart">
+        <h1>Cart Items</h1>
+        <ol>
+          {cartItems}
+        </ol>
+        <div className="total-price">
+          <h3>Total Price: <b>${totalPrice}</b></h3>
+        </div>
+      </div>
     </div>
   )
 }

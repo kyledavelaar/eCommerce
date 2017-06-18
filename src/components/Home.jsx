@@ -19,7 +19,7 @@ const Home = (props) => {
           className="img-responsive"
           src={item.src}
           alt={item.title} />
-        <span className="list-item-desc"><b>{item.title}</b>{item.price}</span>
+        <span className="list-item-desc"><b>{item.title}</b>  ${item.price}</span>
       </li>
     )
   })
@@ -29,7 +29,7 @@ const Home = (props) => {
       <div className="row">
         <Navbar />
         <div className="col-sm-12 header">
-          <h1>Home</h1>
+          <h1>Gallery</h1>
         </div>
         <ul className="list">
           {shelfItems}
