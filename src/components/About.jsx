@@ -5,8 +5,8 @@ const About = () => (
   <div className="container-fluid">
     <div className="row">
       <Navbar />
-      <div className="col-sm-12 header">
-        <h1>About</h1>
+      <div className="col-sm-12">
+        <h1 className="header center">About</h1>
       </div>
       {/*<div className="col-sm-8 col-sm-offset-2">
         <img src="https://unsplash.it/1200/800?image=0" alt="" className="img-responsive"/>

@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 const NotFound = () => (
   <div>
     <Navbar />
-    <h1>NotFound</h1>
+    <h1 className="header center">Not Found</h1>
   </div>
 )
 

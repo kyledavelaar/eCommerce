@@ -14,7 +14,7 @@ export const populate = () => {
       {
         src: "https://unsplash.it/300?image=18",
         title: "Mountaintop Experience",
-        price: "49",
+        price: "39",
         id: Math.floor(Math.random() * 1000)
       },
       {
@@ -26,19 +26,19 @@ export const populate = () => {
       {
         src: "https://unsplash.it/300?image=20",
         title: "Magical One",
-        price: "49",
+        price: "29",
         id: Math.floor(Math.random() * 1000)
       },
       {
         src: "https://unsplash.it/300?image=21",
         title: "Amazon Rainfall",
-        price: "49",
+        price: "39",
         id: Math.floor(Math.random() * 1000)
       },
       {
         src: "https://unsplash.it/300?image=32",
         title: "Valley Below",
-        price: "49",
+        price: "59",
         id: Math.floor(Math.random() * 1000)
       },
     ]

@@ -28,9 +28,9 @@ const Home = (props) => {
     <div className="container-fluid">
       <div className="row">
         <Navbar />
-        <div className="col-sm-12 header">
-          <h1>Gallery</h1>
-        </div>
+        {/*<div className="col-sm-12">
+          <h1 className="header">Gallery</h1>
+        </div>*/}
         <ul className="list">
           {shelfItems}
         </ul>

@@ -28,7 +28,7 @@ const Cart = (props) => {
     <div>
       <Navbar />
       <div className="cart">
-        <h1>Cart Items</h1>
+        <h1 className="header">Cart Items</h1>
         <ol>
           {cartItems}
         </ol>
